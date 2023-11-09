@@ -1,0 +1,79 @@
+<!-- 
+    Todos os elementos HTML têm atributos. Atributos fornecem informações adicionais 
+    sobre os elementos. Eles são sempre especificados na tag de início e geralmente 
+    vêm em pares nome/valor na forma nome="valor".
+
+    É recomendável sempre utilizar nomes de atributos apenas com letras mínusculas e 
+    com aspas duplas antes e depois. As aspas funcionam como as aspas de Python.
+-->
+
+<!DOCTYPE html>
+
+<!--
+    É sempre necessário incluir o atributo lang na tag <html>, para declarar a linguagem da 
+    página web. Isso é útil para auxiliar motores de pesquisa e navegadores.
+
+    Códigos de países podem ser adicionados ao atributo lang. Os dois primeiros caracteres 
+    definem a linguagem e os dois últimos definem o país.
+
+    Por exemplo, en-US define a linguagem inglês dos Estados Unidos.
+    pt-BR define a linguagem portugês do Brasil.
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+</head>
+
+<body>
+    <!-- A tag <a> define um hiperlink. O seu atributo href especifica o URL do link. -->
+    <a href="https://google.com">Página inicial da Google.</a>
+
+    <!-- 
+        A tag <img> é usada para incorporar uma imagem à página HTML. O atributo src 
+        especifica o caminho até a imagem a ser mostrada.
+
+        Há dois jeitos de especificar um URL no atributo src:
+
+            1. URL Absoluto - Link para uma imagem externa armazenada em outro website.
+                              Podem ser protegidas por copyright.
+
+                              Exemplo: src="https://www.w3schools.com/images/img_girl.jpg".
+
+            2. URL Relativo - Link para uma imagem armazenada dentro do website. Aqui,
+                              o URL não inclui o nome do domínio. Se o URL começa com uma /,
+                              ele é relativo ao domínio. É sempre melhor usar URLs Relativos.
+
+                              Exemplo: src="img_girl.jpg"
+    -->
+
+    <!--
+        Os atributos width e height da tag <img> especificam a largura e a altura da imagem, 
+        respectivamente.
+    -->
+
+    <!--
+        O atributo alt da tag <img> especifica um texto alternativo para a imagem, se ela não puder 
+        ser mostrada. Isso pode acontecer por causa de uma conexão fraca, um erro no atributo src, ou 
+        se o usuário utiliza um leitor de tela.
+    -->
+    <img src="https://logopng.com.br/logos/google-37.svg" alt="Logotipo da Google" width="100px" height="50px">
+
+    <!-- O atributo style é usado para adicionar um estilo a um elemento, como cor, fonte, tamanho, etc. -->
+    <p style="color: red">Isso é um parágrafo vermelho.</p>
+
+    <!-- 
+        O atributo title define informações extras sobre o elemento. O seu valor é 
+        mostrado como uma tooltip quando o mouse está sobre o elemento.
+    -->
+    <p title="Isso é uma tooltip">Isso é um parágrafo.</p>
+
+    <hr>
+    <a href="03-elementos.html">Anterior</a>
+    <br>
+    <a href="05-titulos.html">Próximo</a>
+</body>
+
+</html>
